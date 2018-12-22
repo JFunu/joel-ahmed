@@ -28,16 +28,25 @@
         <form id="survey-form" method="POST"> 
           <div class="control">
             <label for="name" id="name-label">* Name</label>
-            <input type="text" id="name" required />
+            <input type="text" id="name" required placeholder="Name" />
           </div>
           <div class="control">
               <label for="email" id="email-label">* Email</label>
-              <input type="email" id="email" required />
+              <input type="email" id="email" required  placeholder="Email"/>
           </div>
        
           <div class="control">
               <label for="number" id="number-label">* Number</label>
-              <input type="number" id="number" required min="10" and max="100000" />
+              <input type="number" id="number" required min="10" and max="100000" placeholder="Number" />
+          </div>
+
+          <div class="control">
+              <label for="dropdown">* dropdown</label>
+              <select id="dropdown">
+                <option selected value="1">option1</option>
+                <option value="2">option2</option>
+                <option value="3">option3</option>
+              </select>
           </div>
 
         </form>
